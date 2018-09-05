@@ -9,6 +9,7 @@ import java.util.concurrent.Callable;
 public class MediaPlayingTask implements Callable {
     private static MediaPlayer player = null;
     private final String mediaFile;
+    private static String currentPlayingMedia = null;
 
     public MediaPlayingTask(String mediaFile) {
         this.mediaFile = mediaFile;
@@ -27,6 +28,7 @@ public class MediaPlayingTask implements Callable {
         try {
             Thread.sleep(5000); //FIXME - HACK - Wait for the player to initialize
             System.out.println("Playing media " + mediaFile);
+            currentPlayingMedia = mediaFile;
 
             player.play();
 
@@ -51,6 +53,6 @@ public class MediaPlayingTask implements Callable {
     }
 
     public String getCurrentMediaFile() {
-        return mediaFile;
+        return currentPlayingMedia;
     }
 }

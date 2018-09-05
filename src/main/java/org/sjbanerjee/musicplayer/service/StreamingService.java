@@ -21,7 +21,7 @@ public class StreamingService {
             }
 
             outputStream.close();
-            System.out.println("############stop#############");
+            System.out.println("Streaming completed!");
             is.close();
     }
 }

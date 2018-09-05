@@ -1,0 +1,22 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Music Broadcast</title>
+</head>
+
+<body>
+<script>
+function play(){
+       var audio = document.getElementById("audio");
+	   audio.currentTime = 20;
+       audio.play();
+	   }
+</script>
+
+<audio id="audio" src="http://localhost:8080/broadcast/play" controls onclick="play()>
+<p>Your browser does not support the audio element </p>
+</audio>
+</body>
+
+</html> 
