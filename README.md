@@ -9,6 +9,7 @@ A live music broadcast application. The inspiration behind this project was to c
     
 ### Work in Progress:
     - Build a UI client to make the experience much more fluid
+    - I *may* extract a library out of this project in future
 
 ### Tech
 
